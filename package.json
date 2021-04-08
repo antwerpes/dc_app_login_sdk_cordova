@@ -1,0 +1,20 @@
+{
+    "name": "doccheck-app-login",
+    "version": "0.1.0",
+    "description": "",
+    "cordova": {
+      "id": "dc_app_login_sdk_cordova",
+      "platforms": [ 
+        "ios", "android"
+      ]
+    },
+    "keywords": [ 
+      "doccheck",
+      "cordova",
+      "ecosystem:cordova",
+      "cordova-ios",
+      "cordova-android"
+    ],
+    "author": "DocCheck Community GmbH",
+    "license": "MIT"
+  }

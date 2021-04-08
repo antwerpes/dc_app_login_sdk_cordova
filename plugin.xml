@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<plugin id="dc_app_login_sdk_cordova" version="0.1.0"
+        xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+    <name>DocCheckAppLogin</name>
+
+    <js-module name="DocCheckAppLogin" src="www/DocCheckAppLogin.js">
+        <clobbers target="DocCheckAppLogin" />
+    </js-module>
+
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+
+            <feature name="DocCheckAppLogin">
+                <param name="ios-package" value="DocCheckAppLogin" />
+            </feature>
+
+        </config-file>
+
+        <!-- Add in the plugin .swift files here -->
+        <source-file src="src/ios/DocCheckAppLogin.swift" />
+
+        <!-- Add in the swift-support plugin by default -->
+        <dependency id="cordova-plugin-add-swift-support" version="2.0.2"/>
+        <podspec>
+            <pods use-frameworks="true" inhibit-all-warnings="true">
+                <pod 
+                    name="DocCheckAppLoginSDK" 
+                    git="git@github.com:antwerpes/dc_app_login_sdk_ios.git" 
+                    tag="0.1.2"
+                />
+            </pods>
+        </podspec>
+    </platform>
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="DocCheckAppLogin">
+                <param name="android-package" value="doccheck.cordova.DocCheckAppLogin" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/DocCheckAppLogin.kt" target-dir="app/src/main/kotlin" />
+        <framework src="src/android/applogin.gradle" custom="true" type="gradleReference"/>
+        <lib-file src="src/android/applogin-release.aar" />
+    </platform>
+</plugin>
