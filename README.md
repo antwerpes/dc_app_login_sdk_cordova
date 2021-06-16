@@ -3,6 +3,8 @@
 
 The DocCheck App Login SDK provides you with a simple to use integration of the authentication through DocCheck. This is done by providing a ViewController which wraps the Web flow and handles callbacks for the authentication.
 
+For more details regarding the DocCheck login product and licenses visit [our website](https://biz.doccheck.com/com/services/passwordprotection/) or request initial information via industry@doccheck.com.
+
 ## Requirements
 
 ### Cordova
@@ -98,4 +100,4 @@ An example project with integration instructions can be found in the [Example Re
 |state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
 |dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
 
-
+Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via industry@doccheck.com. 
