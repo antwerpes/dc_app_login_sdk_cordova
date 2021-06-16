@@ -87,13 +87,15 @@ An example project with integration instructions can be found in the [Example Re
 
 ## Response Parameters
 
-| Name           | Description|
-|----------------|------------|
-|login_id        | **DESCRIPTION MISSING**|
-|code            | **DESCRIPTION MISSING**|
-|state           | **DESCRIPTION MISSING**|
-|dc_token        | **DESCRIPTION MISSING**|
-|appid           | **DESCRIPTION MISSING**|
-|intdclanguageid | **DESCRIPTION MISSING**|
-|strdclanguage   | **DESCRIPTION MISSING**|
-|uniquekey       | **DESCRIPTION MISSING**|
+| Name           |Status   |Description                                                                | Value                                                               | License Type     |
+|----------------|---------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------|
+|login_id        |internal |login ID associated with the login                                         |e.g. 200000012345                                                    |all               |
+|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all   		    |
+|intdclanguageid |internal |internal ID that tracks the user language                                  |e.g. 148                                                             |all               |
+|strDcLanguage   |internal |iso code that tracks the user language                                     |(for Personal form). One of "de", "en"/"com", "fr", "nl", "it", "es".|all               |
+|uniquekey       |valid    |alphanumerical string that is individual per user, is passed by each login |e.g. abc_abc884e739adf439ed521720acb5b232                            |economy + business|
+|code            |valid    |Oauth2 parameter                                                           |e.g. abc884e739adf439ed521720acb5b232abc884e739adf439ed521720acb5b232|economy + business|
+|state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
+|dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
+
+
