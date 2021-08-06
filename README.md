@@ -13,7 +13,7 @@ For more details regarding the DocCheck login product and licenses visit [our we
 
 ### iOS
 
-- iOS 13.0+
+- iOS 11.0+
 - Xcode 12+
 - Swift 5.0+
 
@@ -24,13 +24,17 @@ For more details regarding the DocCheck login product and licenses visit [our we
 - AndroidX enabled
 
 ### DocCheck Login ID
-In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (http://crm.doccheck.com/com/). For detailed instructions please read the technical handbook in the download section of https://more.doccheck.com/en/industry/ (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname
 
-Example for input in the target URL in CReaM: 
+In order to ensure smooth integration and functioning always adhere to using the respective framework. Before you can implement the DocCheck Login in your app, you will need to set up a new login in CReaM (<http://crm.doccheck.com/com/>). For detailed instructions please read the technical handbook in the download section of <https://more.doccheck.com/en/industry/> (chapter 2.2.3). When a new login has been created, please add the bundle identifier (for iOS) or the package name (for Android) in the destination URL. This process in general runs as follows: topleveldomain.companyname.appname
+
+Example for input in the target URL in CReaM:
+
 ```shell
 doccheck://login?appid=bundleidentifier
 ```
+
 ### DocCheck License
+
 For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact industry@doccheck.com.  
 
 ## Installation
@@ -102,7 +106,7 @@ An example project with integration instructions can be found in the [Example Re
 | Name           |Status   |Description                                                                | Value                                                               | License Type     |
 |----------------|---------|---------------------------------------------------------------------------|---------------------------------------------------------------------|------------------|
 |login_id        |internal |login ID associated with the login                                         |e.g. 200000012345                                                    |all               |
-|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all   		    |
+|appid           |internal |bundle identifier for the current app, is related to the mobile special    |e.g. "bundleidentifier"                                              |all         |
 |intdclanguageid |internal |internal ID that tracks the user language                                  |e.g. 148                                                             |all               |
 |strDcLanguage   |internal |iso code that tracks the user language                                     |(for Personal form). One of "de", "en"/"com", "fr", "nl", "it", "es".|all               |
 |uniquekey       |valid    |alphanumerical string that is individual per user, is passed by each login |e.g. abc_abc884e739adf439ed521720acb5b232                            |economy + business|
@@ -110,4 +114,4 @@ An example project with integration instructions can be found in the [Example Re
 |state           |valid    |Oauth2 parameter                                                           |e.g. eHxI902CC3doao1                                                 |economy + business|
 |dc_agreement    |valid    |status of confirmation of the data transfer consent form                   |0 = not confirmed; 1 = confirmed                                     |business          |
 
-Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via industry@doccheck.com. 
+Please note that additional parameters can be delivered in case of valid consent for data transfer in combination with an implemented business license. For more Details, please check the OAuth2 documentation. Thats one can be reuqested via industry@doccheck.com.

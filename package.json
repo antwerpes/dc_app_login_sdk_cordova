@@ -1,6 +1,6 @@
 {
-    "name": "doccheck-app-login",
-    "version": "0.1.0",
+    "name": "dc_app_login_sdk_cordova",
+    "version": "0.1.4",
     "description": "",
     "cordova": {
       "id": "dc_app_login_sdk_cordova",
