@@ -3,7 +3,7 @@
 
 The DocCheck App Login SDK provides you with a simple to use integration of the authentication through DocCheck. This is done by providing a ViewController which wraps the Web flow and handles callbacks for the authentication.
 
-For more details regarding the DocCheck login product and licenses visit [our website](https://more.doccheck.com/en/industry/) or request initial information via industry@doccheck.com.
+For more details regarding the DocCheck login product and licenses visit [our website](https://more.doccheck.com/en/industry/) or request initial information via app.industry@doccheck.com.
 
 ## Requirements
 
@@ -35,7 +35,7 @@ doccheck://login?appid=bundleidentifier
 
 ### DocCheck License
 
-For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact industry@doccheck.com.  
+For mobile applications a mobile license is required.To get more details about the different packages (basic, economy and business) as well as booking process please contact app.industry@doccheck.com.  
 
 ## Installation
 
